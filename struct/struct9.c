@@ -21,7 +21,7 @@ int main() {
     printf("Enter imaginary part: ");
     scanf("%f", &c2.imag);
 
-    addNumbers(c1, c2, &result); 
+    addNumbers(c1, c2, &result); //Here, result is passed by reference.
     printf("\nresult.real = %.1f\n", result.real);
     printf("result.imag = %.1f", result.imag);
     
