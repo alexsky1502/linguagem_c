@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-struct Aluno {
+typedef struct Aluno {
     char nome[50];
     int idade;
     char address[50];
-};
+} aluno;
 
 int main() {
-    struct Aluno p1;
+    aluno p1;
 
     printf("Nome: ");
     fgets(p1.nome, 50, stdin);
