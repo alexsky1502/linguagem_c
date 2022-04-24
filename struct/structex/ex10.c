@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+//https://stackoverflow.com/questions/6105513/need-help-using-qsort-with-an-array-of-structs
+//https://stackoverflow.com/questions/40948444/using-qsort-on-a-struct-that-contains-strings
 typedef struct Contato {
     char nome[50];
     char address[50];
