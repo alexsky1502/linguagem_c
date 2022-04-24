@@ -27,7 +27,6 @@ void Ordenar(contato lista[3]) {
 int main() {
     contato lista[3];
     Entrada(lista);
-    Display(lista);
     Ordenar(lista);
     Display(lista);
 }
