@@ -4,10 +4,10 @@
 int main()
 {
    int num;
-   FILE *fptr;
+   FILE *fptr; //you need to declare a pointer of type file
 
-   // use appropriate location if you are using MacOS or Linux
-   fptr = fopen("program.txt","w");
+   // "directory", "mode"
+   fptr = fopen("program.txt","w"); 
 
    if(fptr == NULL)
    {
@@ -19,7 +19,7 @@ int main()
    scanf("%d",&num);
 
    fprintf(fptr,"%d",num);
-   fclose(fptr);
+   fclose(fptr); //closing a file
 
    return 0;
 }
