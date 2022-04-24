@@ -14,16 +14,16 @@ void Display(contato lista[3]);
 int comparar( const void *str1, const void *str2 )
 {
     // qsort() passes in `void*` types because it can't know the actual types being sorted
-    char *const *pp1 = str1;
-    char *const *pp2 = str2;
-    return strcmp(*pp1, *pp2);
+    const contato *pp1 = str1; //you cannot change the pointer , but can change the value pointed.
+    const contato *pp2 = str2;
+    return strcmp(pp1->nome, pp2->nome);
 }
 
 int main() {
     contato lista[3];
     Entrada(lista);
-    Display(lista);
-    qsort(lista, 3, sizeof(lista), comparar);
+    //Display(lista);
+    qsort(lista, 3, sizeof(contato), comparar);
     Display(lista);
 }
 
