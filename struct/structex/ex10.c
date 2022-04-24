@@ -13,6 +13,7 @@ void Display(contato lista[3]);
 
 int comparar( const void *str1, const void *str2 )
 {
+    // qsort() passes in `void*` types because it can't know the actual types being sorted
     char *const *pp1 = str1;
     char *const *pp2 = str2;
     return strcmp(*pp1, *pp2);
