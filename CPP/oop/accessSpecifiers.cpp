@@ -4,7 +4,7 @@
 class MyClass {
     public:
         int x;
-    private:
+    private: //members cannot be accessed or viewed from outside the class
         int y;
 };
 
