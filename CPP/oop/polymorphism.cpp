@@ -1,5 +1,6 @@
 #include <iostream>
-using namespace std;
+using namespace std; //polymorphism means, the same entity function or object behaves differently
+//in different scenarios
 // Base class
 class Animal {
   public:
