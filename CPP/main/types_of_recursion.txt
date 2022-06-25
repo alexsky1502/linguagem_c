@@ -1,0 +1,17 @@
+types of recursion
+
+1. tail recursion
+2. head recursion
+3. tree recursion
+4. indirect recursion
+5. nested recursion
+
+Tail Recursion: after the call, there is nothing to perform. CAlling it self, and it is the last
+statement. When it is returning they do nothing. #Loop is better than recursion in this case.
+
+Head Recursion: there is no statement, no operation before the fuction call. it means the function
+doesent have to proccess or perform any operation at the time of calling. it has to do everything 
+only at the time of returning. #recursive is better than loop in this case.
+
+Tree Recursion: recursive function that is calling itself more than one time. Time complexity = O(2^n)
+Space complexity = O(2^n+1 - 1)
