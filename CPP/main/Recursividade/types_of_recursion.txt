@@ -15,3 +15,8 @@ only at the time of returning. #recursive is better than loop in this case.
 
 Tree Recursion: recursive function that is calling itself more than one time. Time complexity = O(2^n)
 Space complexity = O(2^n+1 - 1)
+
+Indirect recursion: there may be more than one function and they are calling one another in a
+circular fashion, so that if the first function called second one and the second call.
+
+Nester recursion: recursion inside the recursion.
